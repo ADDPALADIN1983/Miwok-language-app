@@ -18,20 +18,20 @@ public class ColorsActivity extends AppCompatActivity {
 
         ArrayList<ListEntry> wordPairs = new ArrayList<ListEntry>();
 
-        wordPairs.add(new ListEntry(R.drawable.placeholder, "weṭeṭṭi", "red"));
-        wordPairs.add(new ListEntry(R.drawable.placeholder, "chokokki", "green"));
-        wordPairs.add(new ListEntry(R.drawable.placeholder, "ṭakaakki", "brown"));
-        wordPairs.add(new ListEntry(R.drawable.placeholder, "ṭopoppi", "gray"));
-        wordPairs.add(new ListEntry(R.drawable.placeholder, "kululli", "black"));
-        wordPairs.add(new ListEntry(R.drawable.placeholder, "kelelli", "white"));
-        wordPairs.add(new ListEntry(R.drawable.placeholder, "ṭopiisә", "dusty yellow"));
-        wordPairs.add(new ListEntry(R.drawable.placeholder, "chiwiiṭә", "mustard yellow"));
+        wordPairs.add(new ListEntry(R.drawable.color_red, "weṭeṭṭi", "red"));
+        wordPairs.add(new ListEntry(R.drawable.color_green, "chokokki", "green"));
+        wordPairs.add(new ListEntry(R.drawable.color_brown, "ṭakaakki", "brown"));
+        wordPairs.add(new ListEntry(R.drawable.color_gray, "ṭopoppi", "gray"));
+        wordPairs.add(new ListEntry(R.drawable.color_black, "kululli", "black"));
+        wordPairs.add(new ListEntry(R.drawable.color_white, "kelelli", "white"));
+        wordPairs.add(new ListEntry(R.drawable.color_dusty_yellow, "ṭopiisә", "dusty yellow"));
+        wordPairs.add(new ListEntry(R.drawable.color_mustard_yellow, "chiwiiṭә", "mustard yellow"));
 
 
         // Keep looping until we've reached the end of the list (which means keep looping
         // as long as the current index position is less than the length of the list)
 
-        WordAdapter adapter = new WordAdapter(this, wordPairs);
+        WordAdapter adapter = new WordAdapter(this, wordPairs, R.color.category_colors);
 
         ListView listView = (ListView) findViewById(R.id.list);
 

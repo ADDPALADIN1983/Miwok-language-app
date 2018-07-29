@@ -17,21 +17,21 @@ public class PhrasesActivity extends AppCompatActivity {
 
         ArrayList<ListEntry> wordPairs = new ArrayList<ListEntry>();
 
-        wordPairs.add(new ListEntry(R.drawable.placeholder, "minto wuksus", "Where are you going?"));
-        wordPairs.add(new ListEntry(R.drawable.placeholder, "tinnә oyaase'nә", "What is your name?"));
-        wordPairs.add(new ListEntry(R.drawable.placeholder, "oyaaset...", "  My name is..."));
-        wordPairs.add(new ListEntry(R.drawable.placeholder, "michәksәs?", "How are you feeling?"));
-        wordPairs.add(new ListEntry(R.drawable.placeholder, "kuchi achit", "I’m feeling good."));
-        wordPairs.add(new ListEntry(R.drawable.placeholder, "әәnәs'aa?", "Are you coming?"));
-        wordPairs.add(new ListEntry(R.drawable.placeholder, "hәә’ әәnәm", "Yes, I’m coming."));
-        wordPairs.add(new ListEntry(R.drawable.placeholder, "әәnәm", "I’m coming."));
-        wordPairs.add(new ListEntry(R.drawable.placeholder, "yoowutis", "Let’s go."));
-        wordPairs.add(new ListEntry(R.drawable.placeholder, "әnni'nem", "Come here."));
+        wordPairs.add(new ListEntry( "minto wuksus", "Where are you going?"));
+        wordPairs.add(new ListEntry( "tinnә oyaase'nә", "What is your name?"));
+        wordPairs.add(new ListEntry( "oyaaset...", "My name is..."));
+        wordPairs.add(new ListEntry( "michәksәs?", "How are you feeling?"));
+        wordPairs.add(new ListEntry( "kuchi achit", "I’m feeling good."));
+        wordPairs.add(new ListEntry( "әәnәs'aa?", "Are you coming?"));
+        wordPairs.add(new ListEntry( "hәә’ әәnәm", "Yes, I’m coming."));
+        wordPairs.add(new ListEntry( "әәnәm", "I’m coming."));
+        wordPairs.add(new ListEntry( "yoowutis", "Let’s go."));
+        wordPairs.add(new ListEntry( "әnni'nem", "Come here."));
 
         // Keep looping until we've reached the end of the list (which means keep looping
         // as long as the current index position is less than the length of the list)
 
-        WordAdapter adapter = new WordAdapter(this, wordPairs);
+        WordAdapter adapter = new WordAdapter(this, wordPairs, R.color.category_phrases);
 
         ListView listView = (ListView) findViewById(R.id.list);
 
