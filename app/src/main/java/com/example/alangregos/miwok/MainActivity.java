@@ -47,39 +47,39 @@ public class MainActivity extends AppCompatActivity {
         });
 
 // Find the View that shows the family category
-        TextView family = (TextView) findViewById(R.id.numbers);
+        TextView family = (TextView) findViewById(R.id.family);
 
 // Set a click listener on that View
-        numbers.setOnClickListener(new View.OnClickListener() {
+        family.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the family View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent numbersIntent = new Intent(MainActivity.this, NumbersActivity.class);
-                startActivity(numbersIntent);
+                Intent familyIntent = new Intent(MainActivity.this, FamilyMembersActivity.class);
+                startActivity(familyIntent);
             }
         });
 // Find the View that shows the colors category
-        TextView colors = (TextView) findViewById(R.id.numbers);
+        TextView colors = (TextView) findViewById(R.id.colors);
 
 // Set a click listener on that View
-        numbers.setOnClickListener(new View.OnClickListener() {
+        colors.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the colors View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent numbersIntent = new Intent(MainActivity.this, NumbersActivity.class);
-                startActivity(numbersIntent);
+                Intent colorsIntent = new Intent(MainActivity.this, ColorsActivity.class);
+                startActivity(colorsIntent);
             }
         });
 // Find the View that shows the phrases category
-        TextView phrases = (TextView) findViewById(R.id.numbers);
+        TextView phrases = (TextView) findViewById(R.id.phrases);
 
 // Set a click listener on that View
-        numbers.setOnClickListener(new View.OnClickListener() {
+        phrases.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the phrases View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent numbersIntent = new Intent(MainActivity.this, NumbersActivity.class);
-                startActivity(numbersIntent);
+                Intent phrasesIntent = new Intent(MainActivity.this, PhrasesActivity.class);
+                startActivity(phrasesIntent);
             }
         });
 
