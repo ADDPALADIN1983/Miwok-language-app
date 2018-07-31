@@ -4,11 +4,14 @@ public class ListEntry {
 
     private String mMiwokWord;
     private String mDefaultWord;
+    private int mAudioFile;
     private final int NO_IMAGE_PROVIDED = -1;
     private int mImage = NO_IMAGE_PROVIDED;
 
-    public ListEntry(int imageFile, String miwok, String english) {
 
+    public ListEntry(int imageFile, String miwok, String english, int audio) {
+
+        this.mAudioFile = audio;
         this.mImage = imageFile;
         this.mMiwokWord = miwok;
         this.mDefaultWord = english;
@@ -16,9 +19,9 @@ public class ListEntry {
     }
 
     // constructor for entries without images
-    public ListEntry(String miwok, String english) {
+    public ListEntry(String miwok, String english, int audio) {
 
-
+        this.mAudioFile = audio;
         this.mMiwokWord = miwok;
         this.mDefaultWord = english;
 
@@ -46,4 +49,7 @@ public class ListEntry {
         return mImage != NO_IMAGE_PROVIDED;
     }
 
+    public int getmAudioFile(){
+        return mAudioFile;
+    }
 }
