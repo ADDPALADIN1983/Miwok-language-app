@@ -55,7 +55,7 @@ public class WordAdapter extends ArrayAdapter<ListEntry> {
                     R.layout.list_item, parent, false);
         }
 
-        // Get the {@link AndroidFlavor} object located at this position in the list
+        // Get the {@link ListEntry} object located at this position in the list
         ListEntry currentListEntry = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID version_name
